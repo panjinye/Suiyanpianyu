@@ -1,4 +1,4 @@
-import getSortedPostsData from '../../utils/parseMd';
+import getSortedPostsData, { getAllPostsData } from '../../utils/parseMd';
 import Layout from '../../components/Layout';
 import Head from 'next/head';
 import Breadcrumb from '../../components/Breadcrumb';
@@ -7,7 +7,7 @@ import CustomLink from '../../components/Link';
 import config from '../../config';
 
 export async function getStaticPaths() {
-    const allPostsData = getSortedPostsData();
+    const allPostsData = getAllPostsData();
     const tags = new Set<string>();
 
     allPostsData.forEach((post) => {
@@ -30,7 +30,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: { params?: { tag: string } } = {}) {
-    const allPostsData = getSortedPostsData();
+    const allPostsData = getAllPostsData();
     const tag = params?.tag;
 
     if (!tag) {

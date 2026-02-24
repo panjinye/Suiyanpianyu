@@ -106,3 +106,31 @@ export function getPostById(id: string): Post | null {
     
     return parsePostFile(filePath, `${id}.md`);
 }
+
+// 获取所有文章，包括about.md（用于标签扫描）
+export function getAllPostsData(): Post[] {
+    console.log('Posts directory:', postsDirectory);
+    console.log('Posts directory exists:', fs.existsSync(postsDirectory));
+    
+    const fileNames = fs.readdirSync(postsDirectory);
+    console.log('Files in md directory:', fileNames);
+    
+    const allPostsData = fileNames.map(fileName => {
+        // 只排除 thoughts 目录，不排除 about.md
+        if (fileName === 'thoughts') {
+            return null;
+        }
+
+        const filePath = path.join(postsDirectory, fileName);
+        console.log('Processing file:', filePath);
+        
+        return parsePostFile(filePath, fileName);
+    }).filter((post): post is Post => post !== null);
+    return allPostsData.sort((a: Post, b: Post) => {
+        // 确保time字段存在且是有效的日期格式
+        if (!a.time || !b.time) {
+            return 0; // 或者根据你的需求处理错误
+        }
+        return new Date(b.time).getTime() - new Date(a.time).getTime(); // 颠倒排序
+    });
+}

@@ -1,4 +1,4 @@
-import getSortedPostsData from '../utils/parseMd';
+import getSortedPostsData, { getAllPostsData } from '../utils/parseMd';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Breadcrumb from '../components/Breadcrumb';
@@ -29,7 +29,7 @@ function createTagsData(blogData: Post[]): TagData[] {
 }
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData();
+    const allPostsData = getAllPostsData();
     const tagsData = createTagsData(allPostsData);
     return {
         props: {
