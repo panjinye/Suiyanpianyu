@@ -1,0 +1,84 @@
+import React from 'react';
+import Link from './Link';
+import HomeIcon from './icons/HomeIcon';
+
+interface BreadcrumbProps {
+    type: 'home' | 'archives' | 'tags' | 'tag' | 'search' | 'friends' | 'blog' | 'sponsors' | 'ai-label' | 'thoughts' | 'about';
+    title?: string;
+    tag?: string;
+    pageNum?: number;
+}
+
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ type, title, tag, pageNum }) => {
+    const renderItems = () => {
+        const items: Array<{ label: string; href: string; icon?: React.ReactNode }> = [
+            { label: '首页', href: '/', icon: <HomeIcon className="w-5 h-5" /> }
+        ];
+
+        switch (type) {
+            case 'home':
+                return null;
+            case 'archives':
+                items.push({ label: '文章归档', href: '/Archives' });
+                break;
+            case 'tags':
+                items.push({ label: '标签', href: '/Tags' });
+                break;
+            case 'tag':
+                items.push({ label: '标签', href: '/Tags' });
+                if (tag) {
+                    items.push({ label: tag, href: `/tags/${tag}` });
+                }
+                break;
+            case 'search':
+                items.push({ label: '搜索', href: '/search' });
+                break;
+            case 'friends':
+                items.push({ label: '友情链接', href: '/Friends' });
+                break;
+            case 'thoughts':
+                items.push({ label: '片语', href: '/thoughts' });
+                break;
+            case 'ai-label':
+                items.push({ label: 'AI标识', href: '/AI-Label' });
+                break;
+            case 'blog':
+                items.push({ label: title || '文章', href: '' });
+                break;
+            case 'sponsors':
+                items.push({ label: '赞赏', href: '/Sponsors' });
+                break;
+            case 'about':
+                items.push({ label: '关于', href: '/about' });
+                break;
+            default:
+                return null;
+        }
+
+        return items;
+    };
+
+    const items = renderItems();
+    if (!items || items.length <= 1) return null;
+
+    return (
+        <nav className="flex items-center space-x-2 text-sm text-text-secondary mb-4" role="navigation" aria-label="面包屑导航">
+            {items.map((item, index) => (
+                <React.Fragment key={index}>
+                    {index === items.length - 1 && type === 'blog' ? (
+                        <span className="text-text-primary">{item.label}</span>
+                    ) : (
+                        <Link href={item.href} className="hover:text-text-dark" aria-label={item.label}>
+                            {item.icon || item.label}
+                        </Link>
+                    )}
+                    {index < items.length - 1 && (
+                        <span className="text-border" aria-hidden="true">/</span>
+                    )}
+                </React.Fragment>
+            ))}
+        </nav>
+    );
+};
+
+export default Breadcrumb;

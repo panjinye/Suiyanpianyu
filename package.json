@@ -1,0 +1,57 @@
+{
+  "name": "suiyanblog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "node generateRSS.js && node generateSitemap.js && next build",
+    "start": "next start",
+    "preview": "npx serve out",
+    "nb": "node createBlog.js",
+    "nt": "node createThought.js",
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@giscus/react": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.564.0",
+    "next": "^16.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "reading-time": "^1.5.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^16.1.6",
+    "@types/node": "^25.0.5",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8",
+    "serve": "^14.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.9.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.05%",
+      "not dead",
+      "not op_mini all",
+      "not IE 11",
+      "not Safari <14",
+      "not iOS <14",
+      "not Chrome <90",
+      "not Firefox <88",
+      "not Edge <90"
+    ],
+    "development": [
+      "last 1 Chrome version",
+      "last 1 Firefox version",
+      "last 1 Safari version",
+      "last 1 Edge version"
+    ]
+  }
+}
