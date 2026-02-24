@@ -32,11 +32,17 @@ export async function getStaticProps() {
 const formatDate = (dateString: string): string => {
   if (!dateString) return '';
   try {
-    const parts = dateString.split('T')[0];
-    const [year, month, day] = (parts || dateString.substring(0, 10)).split('-');
-    return `${year}/${month}/${day}`;
+    // 简单处理ISO格式的日期
+    if (dateString.includes('T')) {
+      return dateString.split('T')[0].replace(/-/g, '/');
+    }
+    // 处理普通日期格式
+    if (dateString.includes('-')) {
+      return dateString.substring(0, 10).replace(/-/g, '/');
+    }
+    return dateString;
   } catch (error) {
-    return '';
+    return dateString;
   }
 };
 
