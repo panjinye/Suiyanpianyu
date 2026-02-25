@@ -59,11 +59,18 @@ description: 关于柒色墨笺的一些信息
 - 技术文章
 - 生活随笔
 - 片语
+## 站点信息
+
+- 名称： 柒色墨笺
+- 地址： https://vii.ink
+- 订阅： https://vii.ink/feed.xml
+- 图标： https://vii.ink/assets/images/avatar.png
+- 描述： 柒色入墨，落笔成诗
 
 ## 联系方式
 
 - 邮箱：ficor@ficor.cc
-- GitHub：https://github.com/panjinye
+- GitHub：https://github.com/panjiye
 ## 许可协议
 
 本博客所有原创文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
