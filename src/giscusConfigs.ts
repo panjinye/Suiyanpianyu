@@ -1,10 +1,10 @@
 import { GiscusConfig } from './types';
 
 const giscusConfigs: GiscusConfig = {
-    repo: "bosichong/suiyanblog",
-    repoId: "R_kgDONjg2qw",
+    repo: "panjinye/suiyanblog",
+    repoId: "R_kgDORYmi-w",
     category: "Announcements",
-    categoryId: "DIC_kwDONjg2q84ClnrC",
+    categoryId: "DIC_kwDORYmi-84C3LkK",
     mapping: 'pathname', // 改为pathname
     strict: '0', // 关闭严格模式
     theme: "dark_dimmed",

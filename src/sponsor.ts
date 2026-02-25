@@ -23,7 +23,7 @@ const sponsorConfig = {
 你的每一分打赏，都在阻止我转行去送外卖。大恩不言谢，祝你代码永无报错，摸鱼不被抓包！`,
 
     // 赞赏码图片
-    sponsorCode: "https://www.suiyan.cc/assets/images/zs.jpg",
+    sponsorCode: "https://img.ficor.net/uploads/2026/02/699ef2573ec2a.webp",
 
     // 赞赏历史记录
     records: [
@@ -32,30 +32,6 @@ const sponsorConfig = {
             amount: "¥6.66",
             date: "2026-01-02",
             message: "新年快乐！"
-        },
-        {
-            name: "密斯特Li",
-            amount: "¥1.8",
-            date: "2025-11-20",
-            message: "坚持写博客不容易，支持一下"
-        },
-        {
-            name: "yyf520",
-            amount: "¥1.23",
-            date: "2025-05-12",
-            message: "加油"
-        },
-        {
-            name: "匿名",
-            amount: "¥18.88",
-            date: "2025-01-05",
-            message: "支持!"
-        },
-        {
-            name: "豆子",
-            amount: "¥5",
-            date: "2024-12-15",
-            message: "感谢博主分享"
         },
         {
             name: "Zzxlb",
