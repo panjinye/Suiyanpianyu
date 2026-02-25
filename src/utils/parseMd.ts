@@ -26,9 +26,24 @@ function parsePostFile(filePath: string, fileName: string): Post | null {
         const aiLabel = matterResult.data.ai_label !== undefined ? parseInt(matterResult.data.ai_label) : 0;
 
         // 确保所有日期字段都是字符串
+        // 处理标签字段，确保它是一个字符串
+        let tagValue = matterResult.data.tag;
+        if (!tagValue && matterResult.data.tags) {
+            if (Array.isArray(matterResult.data.tags)) {
+                tagValue = matterResult.data.tags.join(',');
+            } else {
+                tagValue = matterResult.data.tags;
+            }
+        }
+        // 确保 tagValue 不是 undefined
+        if (tagValue === undefined) {
+            tagValue = '';
+        }
+        
         const postData = {
             id, // 添加 id 属性
             ...matterResult.data,
+            tag: tagValue, // 确保标签字段存在且是字符串
             description,
             content: matterResult.content,
             ai_label: aiLabel,
@@ -107,25 +122,38 @@ export function getPostById(id: string): Post | null {
     return parsePostFile(filePath, `${id}.md`);
 }
 
-// 获取所有文章，包括about.md（用于标签扫描）
+// 递归扫描目录中的所有Markdown文件
+function scanDirectory(directory: string): Post[] {
+    let posts: Post[] = [];
+    const entries = fs.readdirSync(directory, { withFileTypes: true });
+    
+    for (const entry of entries) {
+        const fullPath = path.join(directory, entry.name);
+        
+        if (entry.isDirectory()) {
+            // 递归扫描子目录
+            posts = posts.concat(scanDirectory(fullPath));
+        } else if (entry.isFile() && entry.name.endsWith('.md')) {
+            // 处理Markdown文件
+            console.log('Processing file:', fullPath);
+            const post = parsePostFile(fullPath, entry.name);
+            if (post) {
+                posts.push(post);
+            }
+        }
+    }
+    
+    return posts;
+}
+
+// 获取所有文章，包括about.md和thoughts目录中的文章（用于标签扫描）
 export function getAllPostsData(): Post[] {
     console.log('Posts directory:', postsDirectory);
     console.log('Posts directory exists:', fs.existsSync(postsDirectory));
     
-    const fileNames = fs.readdirSync(postsDirectory);
-    console.log('Files in md directory:', fileNames);
+    // 递归扫描所有目录
+    const allPostsData = scanDirectory(postsDirectory);
     
-    const allPostsData = fileNames.map(fileName => {
-        // 只排除 thoughts 目录，不排除 about.md
-        if (fileName === 'thoughts') {
-            return null;
-        }
-
-        const filePath = path.join(postsDirectory, fileName);
-        console.log('Processing file:', filePath);
-        
-        return parsePostFile(filePath, fileName);
-    }).filter((post): post is Post => post !== null);
     return allPostsData.sort((a: Post, b: Post) => {
         // 确保time字段存在且是有效的日期格式
         if (!a.time || !b.time) {

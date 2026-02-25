@@ -15,11 +15,11 @@ const config: Config = {
     "BLOG_DESCRIPTION_EN": "You see see you , This one day day di.",
     // 关于我简介
     "ABOUT_ME": "一纸墨笺，载七色人间",
-    "POSTS_PER_PAGE": 7,
+    "POSTS_PER_PAGE": 15,
     // 元描述，用于搜索引擎优化
     "META_DESCRIPTION": "柒色入墨，落笔成诗",
     // 元关键词，用于搜索引擎优化
-    "META_KEYWORDS": "Python,JavaScript,程序员,Godot,编程,技术博客,学习笔记,碎言,哲学,人生,成长",
+    "META_KEYWORDS": "Python,JavaScript,学习笔记,碎言,哲学,人生,成长",
     // 头像图片路径
     "PROFILE_IMAGE": "assets/images/avatar.png",
 
