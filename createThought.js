@@ -3,6 +3,14 @@ const path = require('path');
 
 const THOUGHTS_DIR = path.join('./md', 'thoughts');
 
+// 获取UTC+8时间的函数
+const getUTC8Time = () => {
+  const now = new Date();
+  // 转换为UTC+8时间
+  const utc8Time = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+  return utc8Time;
+};
+
 const createFileDir = (dir) => {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
@@ -10,8 +18,8 @@ const createFileDir = (dir) => {
 };
 
 const createThought = (content = '我的片语...') => {
-  const create_time = new Date().toISOString();
-  const pagename = new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14);
+  const create_time = getUTC8Time().toISOString();
+  const pagename = getUTC8Time().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14);
 
   const thoughtFilePath = path.join(THOUGHTS_DIR, `${pagename}.md`);
 

@@ -4,6 +4,13 @@ const { exec } = require('child_process');
 
 const ARTICLES_DIR = path.join('./md');
 
+// 获取UTC+8时间的函数
+const getUTC8Time = () => {
+  const now = new Date();
+  // 转换为UTC+8时间
+  const utc8Time = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+  return utc8Time;
+};
 
 const createFileDir = (dir) => {
   if (!fs.existsSync(dir)) {
@@ -12,16 +19,27 @@ const createFileDir = (dir) => {
 };
 
 const createBlog = async (title = '博客标题', author = '', tag = '', filedir = '', pagename = '', ai_label = 0) => {
-  const create_time = new Date().toISOString();
+  const create_time = getUTC8Time().toISOString();
 
   if (!pagename) {
-    pagename = new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14);
+    // 如果标题为空，使用时间戳生成文件名
+    if (!title || title === '博客标题') {
+      pagename = getUTC8Time().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14);
+    } else {
+      // 使用标题生成文件名，处理特殊字符
+      pagename = title
+        .replace(/[\s\/\\:*?"<>|]/g, '-') // 替换空格和特殊字符为连字符
+        .replace(/-+/g, '-') // 合并连续的连字符
+        .replace(/^-|-$/g, '') // 移除首尾的连字符
+        .toLowerCase() // 转换为小写
+        .slice(0, 50); // 限制长度
+    }
   }
   if (!tag) {
-    tag = "未分类";
+    tag = "日志";
   }
   if (!author) {
-    author = "J.sky"; // 直接使用已加载的配置
+    author = "Ficor"; // 直接使用已加载的配置
   }
   if (typeof ai_label !== 'number') {
     ai_label = 0;
