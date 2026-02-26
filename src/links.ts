@@ -15,13 +15,6 @@ const linksConfig = {
     // 友情链接
     links: [
         {
-            "site_name": "Owen的博客",
-            "site_url": "https://www.owenyoung.com/",
-            "site_description": "主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向。",
-            "site_avatar": "#",
-            "is_active": true
-        },
-        {
             "site_name": "莫比乌斯",
             "site_url": "https://onojyun.com/",
             "site_description": "写作，一场自我悖驳的旅程。我写自己的生活、也写自己的讣告。",
@@ -40,13 +33,6 @@ const linksConfig = {
             "site_url": "https://www.geedea.pro/",
             "site_description": "这里只有真情流露和赤裸的思考。",
             "site_avatar": "https://r2.eltr.ac/geedeapro/header.avif",
-            "is_active": true
-        },
-        {
-            "site_name": "阮一峰的网络日志",
-            "site_url": "https://www.ruanyifeng.com/blog/",
-            "site_description": "记录时代的变迁，和科技的发展。",
-            "site_avatar": "https://www.ruanyifeng.com/blog/images/person2_s.jpg",
             "is_active": true
         },
         {
@@ -106,14 +92,14 @@ const linksConfig = {
             "is_active": true
         },
         {
-            "site_name": "荒野克",
+            "site_name": "荒野菲克",
             "site_url": "https://ficor.net",
             "site_description": "在路上的思绪与脚印",
             "site_avatar": "https://img.ficor.net/uploads/2026/01/6960704808a61.webp",
             "is_active": true
         },
         {
-            "site_name": "静-夜-思",
+            "site_name": "静·夜·思",
             "site_url": "https://blog.ficor.net",
             "site_description": "网页中的诗意与宁静",
             "site_avatar": "https://img.ficor.net/uploads/2025/11/6914480601006.webp",
@@ -134,7 +120,7 @@ const linksConfig = {
             "is_active": true
         },
         {
-            "site_name": "瓦匠小舟",
+            "site_name": "瓦匠不舟",
             "site_url": "https://airy.ink",
             "site_description": "大家都是倔强的人",
             "site_avatar": "https://cravatar.cn/avatar/060afceaea08afc40f8bcef99fe8542a",
@@ -183,7 +169,7 @@ const linksConfig = {
             "is_active": true
         },
         {
-            "site_name": "爱坡日记",
+            "site_name": "缓坡日记",
             "site_url": "https://amr.me",
             "site_description": "网页中的诗意与宁静",
             "site_avatar": "https://thirdqq.qlogo.cn/g?b=qq&k=160860446&s=100",
@@ -232,17 +218,10 @@ const linksConfig = {
             "is_active": true
         },
         {
-            "site_name": "粉红落日",
+            "site_name": "彬红茶",
             "site_url": "https://note.redcha.cn",
             "site_description": "生活原本沉闷，但跑起来就有风",
             "site_avatar": "https://note.redcha.cn/upload/favicon-256x256.png",
-            "is_active": true
-        },
-        {
-            "site_name": "obaby♠marx",
-            "site_url": "https://oba.by",
-            "site_description": "黑客程序媛",
-            "site_avatar": "https://gg.lang.bi/avatar/de6bc088df916bcc9e8b94a0f9bf064e57be5b40bd520c6db2492740fc5632?size=908d=identicon&r=n",
             "is_active": true
         },
         {
@@ -281,7 +260,7 @@ const linksConfig = {
             "is_active": true
         },
         {
-            "site_name": "且听吟玲",
+            "site_name": "且听书吟",
             "site_url": "https://yufan.me",
             "site_description": "诗与梦想的远方",
             "site_avatar": "https://yufan.me/logo.svg",
@@ -309,7 +288,7 @@ const linksConfig = {
             "is_active": true
         },
         {
-            "site_name": "啸寒瘦鹰",
+            "site_name": "燕渡寒潭",
             "site_url": "https://hisherry.com",
             "site_description": "别为活命而败坏生存之报",
             "site_avatar": "https://cravatar.cn/avatar/c822f896a4408073a0845eb6a1ead02d72859e9e0273df3280669db895165123s=42&r=g",
@@ -320,20 +299,6 @@ const linksConfig = {
             "site_url": "https://www.hollowman.cn",
             "site_description": "看清生活的真相后依然热爱生活",
             "site_avatar": "https://www.hollowman.cn/favicon.png",
-            "is_active": true
-        },
-        {
-            "site_name": "GitHub",
-            "site_url": "https://github.com",
-            "site_description": "The future of building happens together",
-            "site_avatar": "https://github.githubassets.com/favicons/favicon.svg",
-            "is_active": true
-        },
-        {
-            "site_name": "莫比乌斯",
-            "site_url": "http://onojyun.com",
-            "site_description": "写作，是一场自我悖驳的旅程",
-            "site_avatar": "https://onojyun.com/wp-content/uploads/2024/03/a2d42-cropped-mobius_icon_black-edited.png",
             "is_active": true
         },
         {
@@ -379,7 +344,7 @@ const linksConfig = {
             "is_active": true
         },
         {
-            "site_name": "孤竹",
+            "site_name": "孤鬥",
             "site_url": "https://d-d.design",
             "site_description": "做自己，不随波逐流，不妥协",
             "site_avatar": "https://img.ficor.net/uploads/2025/11/6914480601006.webp",
@@ -389,11 +354,6 @@ const linksConfig = {
 
     // 博客聚合平台
     blogAggregations: [
-        {
-            "site_name": "博客之家",
-            "site_url": "https://www.yuque.com/bloghouse",
-            "site_description": "博客人的朋友圈，将一个个散落在各处的孤岛连接成一片广袤无垠的新大陆！"
-        },
         {
             "site_name": "BlogFinder",
             "site_url": "https://bf.zzxworld.com/",
@@ -410,19 +370,29 @@ const linksConfig = {
             "site_description": "每一个博客，都是精神的驿站。我们不同行，但彼此照亮。在此驻足，便积蓄前行的力量。"
         },
         {
-            "site_name": "有个站",
-            "site_url": "https://www.ygz.ink/",
-            "site_description": "收录优质中文独立博客，探索网络世界的个性表达与深度思考"
+            "site_name": "十年之约",
+            "site_url": "https://www.foreverblog.cn/",
+            "site_description": "一个人的寂寞，一群人的狂欢"
         },
         {
-            "site_name": "博客集",
-            "site_url": "https://bloginc.cn",
-            "site_description": "致力于收集优秀的中文独立博客。"
+            "site_name": "笔墨迹",
+            "site_url": "https://blogscn.fun/",
+            "site_description": "致敬还在写博客的我们"
         },
         {
-            "site_name": "友链展示站",
+            "site_name": "朋友们的博客",
             "site_url": "https://peng.you/",
-            "site_description": "发现优质博客与网站,友链展示站致力于为博客作者和网站运营者提供一个简洁、现代的友情链接展示平台"
+            "site_description": "每一个博客，都是精神的驿站。"
+        },
+        {
+            "site_name": "博客星球",
+            "site_url": "https://www.blogplanet.cn/",
+            "site_description": "每一个博客都是一个独立星球！"
+        },
+        {
+            "site_name": "FindBlog",
+            "site_url": "https://www.findblog.net/",
+            "site_description": "发现有趣的独立博客"
         },
         {
             "site_name": "个站商店",
