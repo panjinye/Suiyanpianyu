@@ -58,8 +58,8 @@ const Friends = () => {
     return (
         <Layout>
             <Head>
-                <title>Friends 友情链接 | SuiYan 碎言 </title>
-                <meta name="description" content="碎言博客的友情链接"/>
+                <title>友情链接 | 柒色墨笺 </title>
+                <meta name="description" content="柒色墨笺的友情链接"/>
             </Head>
 
             <Breadcrumb type="friends" />
