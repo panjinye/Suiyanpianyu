@@ -51,8 +51,10 @@ const LinkSection = ({ title, description, links }: LinkSectionProps) => {
 };
 
 const Friends = () => {
-    const links = linksConfig.links;
-    const aggregations = linksConfig.blogAggregations;
+    // 随机排列友链
+    const links = [...linksConfig.links].sort(() => Math.random() - 0.5);
+    // 随机排列博客聚合平台
+    const aggregations = [...linksConfig.blogAggregations].sort(() => Math.random() - 0.5);
     const [showComments, setShowComments] = useState(false);
 
     return (
