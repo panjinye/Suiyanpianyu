@@ -70,7 +70,7 @@ description: 关于柒色墨笺的一些信息
 ## 联系方式
 
 - 邮箱：ficor@ficor.cc
-- GitHub：https://github.com/panjiye
+- GitHub：https://github.com/ficorcc
 ## 许可协议
 
 本博客所有原创文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。

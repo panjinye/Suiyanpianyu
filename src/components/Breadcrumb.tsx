@@ -3,7 +3,7 @@ import Link from './Link';
 import HomeIcon from './icons/HomeIcon';
 
 interface BreadcrumbProps {
-    type: 'home' | 'archives' | 'tags' | 'tag' | 'search' | 'friends' | 'blog' | 'sponsors' | 'ai-label' | 'thoughts' | 'about';
+    type: 'home' | 'archives' | 'tags' | 'tag' | 'search' | 'friends' | 'blog' | 'sponsors' | 'ai-label' | 'thoughts' | 'about' | 'activity';
     title?: string;
     tag?: string;
     pageNum?: number;
@@ -50,6 +50,9 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ type, title, tag, pageNum }) =>
                 break;
             case 'about':
                 items.push({ label: '关于', href: '/about' });
+                break;
+            case 'activity':
+                items.push({ label: '动态', href: '/activity' });
                 break;
             default:
                 return null;

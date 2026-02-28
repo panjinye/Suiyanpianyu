@@ -73,28 +73,11 @@ export default function About({ post }: { post: Post }) {
           title="关于"
         />
 
-        <header className="mb-4">
-          <h1 className="text-4xl font-semibold mb-4 text-text-primary">
-            {post.title}
-          </h1>
-          <div className="flex flex-wrap items-center gap-2 text-sm text-text-secondary">
-            <span>作者: {post.author}</span>
-            {post.time && typeof post.time === 'string' && post.time.trim() !== '' && (
-              <>
-                <span>·</span>
-                <time dateTime={post.time}>
-                  {formatDate(post.time)}
-                </time>
-              </>
-            )}
-            <span>·</span>
-            <span>{stats.words} 字</span>
-            <span>·</span>
-            <span>预计阅读 {stats.text.replace(' read', '')}</span>
-          </div>
-        </header>
+        <h1 className="text-2xl font-semibold mb-4 text-text-primary">
+          关于
+        </h1>
 
-        <div className="prose prose-lg prose-slate">
+        <div className="prose prose-base prose-slate">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}
