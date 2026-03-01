@@ -232,7 +232,7 @@ const links = [
     "site_url": "https://note.redcha.cn",
     "site_description": "生活原本沉闷，但跑起来就有风",
     "site_avatar": "https://note.redcha.cn/upload/favicon-256x256.png",
-    "feed": "https://note.redcha.cn/feed",
+    "feed": "https://note.redcha.cn/rss.xml",
     "is_active": true
   },
   {
@@ -344,7 +344,7 @@ const links = [
     "site_url": "https://www.mhcf.net",
     "site_description": "壹个永恒的部落格",
     "site_avatar": "https://www.mhcf.net/mhcf.ico",
-    "feed": "https://www.mhcf.net/feed",
+    "feed": "https://www.mhcf.net/rss.php",
     "is_active": true
   },
   {
@@ -383,6 +383,10 @@ const links = [
 
 async function fetchRSS() {
   const allItems = [];
+  let successCount = 0;
+  let failCount = 0;
+  
+  console.log('开始抓取RSS数据...');
   
   for (const link of links) {
     try {
@@ -401,11 +405,16 @@ async function fetchRSS() {
       }));
       
       allItems.push(...items);
+      successCount++;
       console.log(`✓ Success: ${link.site_name} - ${items.length} items`);
     } catch (error) {
+      failCount++;
       console.error(`✗ Failed: ${link.site_name} - ${error.message}`);
+      // 继续处理下一个站点，不中断整个过程
     }
   }
+  
+  console.log(`\n抓取完成: 成功 ${successCount} 个站点, 失败 ${failCount} 个站点`);
   
   // 按发布时间排序
   allItems.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
@@ -415,10 +424,29 @@ async function fetchRSS() {
   
   // 保存到 public 目录
   const outputPath = path.join(__dirname, 'public', 'rss-data.json');
-  fs.writeFileSync(outputPath, JSON.stringify(recentItems, null, 2));
   
-  console.log(`\n✓ RSS data saved to ${outputPath}`);
-  console.log(`✓ Total items: ${recentItems.length}`);
+  try {
+    // 确保 public 目录存在
+    if (!fs.existsSync(path.join(__dirname, 'public'))) {
+      fs.mkdirSync(path.join(__dirname, 'public'), { recursive: true });
+    }
+    
+    fs.writeFileSync(outputPath, JSON.stringify(recentItems, null, 2));
+    console.log(`\n✓ RSS data saved to ${outputPath}`);
+    console.log(`✓ Total items: ${recentItems.length}`);
+  } catch (error) {
+    console.error(`✗ Failed to save RSS data: ${error.message}`);
+    throw error; // 保存失败时抛出错误
+  }
 }
 
-fetchRSS().catch(console.error);
+// 执行并确保脚本正确退出
+fetchRSS()
+  .then(() => {
+    console.log('\n✓ 脚本执行成功');
+    process.exit(0);
+  })
+  .catch(error => {
+    console.error('\n✗ 脚本执行失败:', error);
+    process.exit(1);
+  });

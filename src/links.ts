@@ -236,7 +236,7 @@ const linksConfig = {
             "site_url": "https://note.redcha.cn",
             "site_description": "生活原本沉闷，但跑起来就有风",
             "site_avatar": "https://note.redcha.cn/upload/favicon-256x256.png",
-            "feed": "https://note.redcha.cn/feed",
+            "feed": "https://note.redcha.cn/rss.xml",
             "is_active": true
         },
         {
@@ -348,7 +348,7 @@ const linksConfig = {
             "site_url": "https://www.mhcf.net",
             "site_description": "壹个永恒的部落格",
             "site_avatar": "https://www.mhcf.net/mhcf.ico",
-            "feed": "https://www.mhcf.net/feed",
+            "feed": "https://www.mhcf.net/rss.php",
             "is_active": true
         },
         {
