@@ -20,14 +20,6 @@ const links = [
             "is_active": true
         },
         {
-            "site_name": "静·夜·思",
-            "site_url": "https://blog.ficor.net",
-            "site_description": "网页中的诗意与宁静",
-            "site_avatar": "https://ficor.net/favicon.ico",
-            "feed": "https://blog.ficor.net/feed",
-            "is_active": true
-        },
-        {
             "site_name": "ACEVS",
             "site_url": "https://acevs.com",
             "site_description": "你坚持过什么事情？",
