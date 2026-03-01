@@ -8,13 +8,13 @@
     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
     <channel>
-        <title>碎言 - SuiYan Blog</title>
-        <link>https://www.suiyan.cc</link>
-        <atom:link href="https://www.suiyan.cc/feed" rel="self" type="application/rss+xml"/>
+        <title>柒色墨笺</title>
+        <link>https://vii.ink</link>
+        <atom:link href="https://vii.ink/feed" rel="self" type="application/rss+xml"/>
         <description>坚持深度阅读，持续写作输出，复盘技术实践。以终生学习对抗不确定性，把固执与坚持，All in 在值得的事情上。</description>
         <language>zh-CN</language>
         <lastBuildDate>Thu, 26 Feb 2026 15:37:00 GMT</lastBuildDate>
-        <pubDate>Sun, 01 Mar 2026 11:11:07 GMT</pubDate>
+        <pubDate>Sun, 01 Mar 2026 14:10:22 GMT</pubDate>
         <generator>SuiYan Blog RSS Generator</generator>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <managingEditor>contact@suiyan.cc (J.sky)</managingEditor>
@@ -23,17 +23,17 @@
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <image>
-            <url>https://www.suiyan.cc/assets/images/avatar.jpg</url>
-            <title>碎言 - SuiYan Blog</title>
-            <link>https://www.suiyan.cc</link>
+            <url>https://vii.ink/assets/images/avatar.jpg</url>
+            <title>柒色墨笺</title>
+            <link>https://vii.ink</link>
             <width>144</width>
             <height>144</height>
-            <description>碎言博客头像</description>
+            <description>柒色墨笺博客头像</description>
         </image>
     <item>
         <title>明水古城</title>
-        <link>https://www.suiyan.cc/blog/明水古城</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/明水古城</guid>
+        <link>https://vii.ink/blog/明水古城</link>
+        <guid isPermaLink="true">https://vii.ink/blog/明水古城</guid>
         <pubDate>Thu, 26 Feb 2026 15:37:00 GMT</pubDate>
         <description><![CDATA[过年去明水古城，体验一下水城的魅力]]></description>
         <content:encoded><![CDATA[ 提起想法
@@ -56,8 +56,8 @@
     </item>
     <item>
         <title>关于</title>
-        <link>https://www.suiyan.cc/blog/about</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/about</guid>
+        <link>https://vii.ink/blog/about</link>
+        <guid isPermaLink="true">https://vii.ink/blog/about</guid>
         <pubDate>Tue, 24 Feb 2026 12:00:00 GMT</pubDate>
         <description><![CDATA[关于柒色墨笺的一些信息]]></description>
         <content:encoded><![CDATA[
@@ -95,8 +95,8 @@
     </item>
     <item>
         <title>新春佳节</title>
-        <link>https://www.suiyan.cc/blog/spring-festival</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/spring-festival</guid>
+        <link>https://vii.ink/blog/spring-festival</link>
+        <guid isPermaLink="true">https://vii.ink/blog/spring-festival</guid>
         <pubDate>Thu, 19 Feb 2026 09:00:00 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[大年初三了，还是祝大家新春吉祥，万事顺心。
@@ -117,8 +117,8 @@
     </item>
     <item>
         <title>静态博客之路</title>
-        <link>https://www.suiyan.cc/blog/blog</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/blog</guid>
+        <link>https://vii.ink/blog/blog</link>
+        <guid isPermaLink="true">https://vii.ink/blog/blog</guid>
         <pubDate>Sat, 07 Feb 2026 21:37:00 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[最近一直在折腾静态博客，鉴于自身性格原因，有点小小的强迫症，把所有的能找到的程序全部试了一遍，从Hexo，Hugo到最后确定了Astro。中间一些小众一点的静态动态博客基本上全部试了个遍。最终敲定了用Astro来搭建自己的博客。
@@ -138,8 +138,8 @@ Hexo试了几个主题，从Paper、Butterfly到Fluid。最终敲定了Paper来�
     </item>
     <item>
         <title>一月的尾巴</title>
-        <link>https://www.suiyan.cc/blog/January</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/January</guid>
+        <link>https://vii.ink/blog/January</link>
+        <guid isPermaLink="true">https://vii.ink/blog/January</guid>
         <pubDate>Wed, 28 Jan 2026 10:37:00 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[不知不觉，新一年的第一个月就过完了，生活只要充实了，时间就过得好快，回头想想，这一个月，除了每天的工作学习和折腾网站，似乎也没什么值得记录的，千篇一律的过程，好像每天都有新内容，又好像每天都是一样的。
@@ -175,8 +175,8 @@ Hexo试了几个主题，从Paper、Butterfly到Fluid。最终敲定了Paper来�
     </item>
     <item>
         <title>第一场雪</title>
-        <link>https://www.suiyan.cc/blog/first-snow</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/first-snow</guid>
+        <link>https://vii.ink/blog/first-snow</link>
+        <guid isPermaLink="true">https://vii.ink/blog/first-snow</guid>
         <pubDate>Fri, 23 Jan 2026 10:27:00 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -189,8 +189,8 @@ Hexo试了几个主题，从Paper、Butterfly到Fluid。最终敲定了Paper来�
     </item>
     <item>
         <title>第二张明信片</title>
-        <link>https://www.suiyan.cc/blog/second-postcard</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/second-postcard</guid>
+        <link>https://vii.ink/blog/second-postcard</link>
+        <guid isPermaLink="true">https://vii.ink/blog/second-postcard</guid>
         <pubDate>Thu, 22 Jan 2026 10:27:00 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[几天前（1月15日）就收到了虫虫的明信片，写了满满一张的诚意。这是第二次参加明信片活动，初衷是为了拿到朱小呆(https://zhujay.com/)网站的徽章，哈哈。虫虫很用心，设计了好多样式的明信片，然后还有很多新玩法。
@@ -207,8 +207,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>坚果云 x Obsidian 官方同步插件</title>
-        <link>https://www.suiyan.cc/blog/nuts-obsidian</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/nuts-obsidian</guid>
+        <link>https://vii.ink/blog/nuts-obsidian</link>
+        <guid isPermaLink="true">https://vii.ink/blog/nuts-obsidian</guid>
         <pubDate>Thu, 15 Jan 2026 15:50:18 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[新的一年已经过去半个月了，好久没更新了，也是因为最近一直没有什么值得记录的。
@@ -231,8 +231,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>我的第一篇Astro文章</title>
-        <link>https://www.suiyan.cc/blog/my-first-astro</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/my-first-astro</guid>
+        <link>https://vii.ink/blog/my-first-astro</link>
+        <guid isPermaLink="true">https://vii.ink/blog/my-first-astro</guid>
         <pubDate>Tue, 30 Dec 2025 10:08:40 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[这是我的第一个Astro网站，别管怎么样，主题换好了，也设置的差不多了，静待花开吧
@@ -243,8 +243,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>冬月</title>
-        <link>https://www.suiyan.cc/blog/winter-month</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/winter-month</guid>
+        <link>https://vii.ink/blog/winter-month</link>
+        <guid isPermaLink="true">https://vii.ink/blog/winter-month</guid>
         <pubDate>Mon, 22 Dec 2025 10:07:21 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[1. 冬至
@@ -280,8 +280,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>更新手机</title>
-        <link>https://www.suiyan.cc/blog/ios26</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/ios26</guid>
+        <link>https://vii.ink/blog/ios26</link>
+        <guid isPermaLink="true">https://vii.ink/blog/ios26</guid>
         <pubDate>Mon, 08 Dec 2025 09:36:55 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -320,8 +320,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>看病难</title>
-        <link>https://www.suiyan.cc/blog/hospital</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/hospital</guid>
+        <link>https://vii.ink/blog/hospital</link>
+        <guid isPermaLink="true">https://vii.ink/blog/hospital</guid>
         <pubDate>Fri, 28 Nov 2025 06:55:51 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -348,8 +348,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>生前身后</title>
-        <link>https://www.suiyan.cc/blog/dead</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/dead</guid>
+        <link>https://vii.ink/blog/dead</link>
+        <guid isPermaLink="true">https://vii.ink/blog/dead</guid>
         <pubDate>Fri, 21 Nov 2025 07:49:32 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -365,8 +365,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>每周一山</title>
-        <link>https://www.suiyan.cc/blog/every-week</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/every-week</guid>
+        <link>https://vii.ink/blog/every-week</link>
+        <guid isPermaLink="true">https://vii.ink/blog/every-week</guid>
         <pubDate>Mon, 17 Nov 2025 03:51:34 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -397,8 +397,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>立冬</title>
-        <link>https://www.suiyan.cc/blog/winter</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/winter</guid>
+        <link>https://vii.ink/blog/winter</link>
+        <guid isPermaLink="true">https://vii.ink/blog/winter</guid>
         <pubDate>Fri, 07 Nov 2025 10:08:41 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[今天立冬，天气和节气很配合，早上起来还晴着天，没一会就阴天了，一整天都阴沉沉的。下午放学时，居然开始下雨了，一直下到现在也没停。
@@ -425,8 +425,8 @@ BTW：为什么你们写字都写的这么好呢？
     </item>
     <item>
         <title>秋色</title>
-        <link>https://www.suiyan.cc/blog/autumn</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/autumn</guid>
+        <link>https://vii.ink/blog/autumn</link>
+        <guid isPermaLink="true">https://vii.ink/blog/autumn</guid>
         <pubDate>Mon, 03 Nov 2025 06:09:05 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -458,8 +458,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>明信片</title>
-        <link>https://www.suiyan.cc/blog/postcard</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/postcard</guid>
+        <link>https://vii.ink/blog/postcard</link>
+        <guid isPermaLink="true">https://vii.ink/blog/postcard</guid>
         <pubDate>Fri, 24 Oct 2025 14:04:44 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -494,8 +494,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>晴天</title>
-        <link>https://www.suiyan.cc/blog/sunshine</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/sunshine</guid>
+        <link>https://vii.ink/blog/sunshine</link>
+        <guid isPermaLink="true">https://vii.ink/blog/sunshine</guid>
         <pubDate>Mon, 20 Oct 2025 02:55:59 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -533,8 +533,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>网站</title>
-        <link>https://www.suiyan.cc/blog/website</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/website</guid>
+        <link>https://vii.ink/blog/website</link>
+        <guid isPermaLink="true">https://vii.ink/blog/website</guid>
         <pubDate>Sun, 05 Oct 2025 02:03:14 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -555,8 +555,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>节日</title>
-        <link>https://www.suiyan.cc/blog/festival</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/festival</guid>
+        <link>https://vii.ink/blog/festival</link>
+        <guid isPermaLink="true">https://vii.ink/blog/festival</guid>
         <pubDate>Sun, 05 Oct 2025 01:29:42 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -583,8 +583,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>九月的尾巴</title>
-        <link>https://www.suiyan.cc/blog/jiu-yue-wei-ba</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/jiu-yue-wei-ba</guid>
+        <link>https://vii.ink/blog/jiu-yue-wei-ba</link>
+        <guid isPermaLink="true">https://vii.ink/blog/jiu-yue-wei-ba</guid>
         <pubDate>Mon, 29 Sep 2025 11:18:05 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -614,8 +614,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>关于九三阅兵</title>
-        <link>https://www.suiyan.cc/blog/yuebing</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/yuebing</guid>
+        <link>https://vii.ink/blog/yuebing</link>
+        <guid isPermaLink="true">https://vii.ink/blog/yuebing</guid>
         <pubDate>Sat, 06 Sep 2025 07:16:56 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -647,8 +647,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>路过锦州</title>
-        <link>https://www.suiyan.cc/blog/jinzhou</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/jinzhou</guid>
+        <link>https://vii.ink/blog/jinzhou</link>
+        <guid isPermaLink="true">https://vii.ink/blog/jinzhou</guid>
         <pubDate>Tue, 26 Aug 2025 02:25:32 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -688,8 +688,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>沈阳之行</title>
-        <link>https://www.suiyan.cc/blog/shenyang-trip</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/shenyang-trip</guid>
+        <link>https://vii.ink/blog/shenyang-trip</link>
+        <guid isPermaLink="true">https://vii.ink/blog/shenyang-trip</guid>
         <pubDate>Fri, 15 Aug 2025 09:20:57 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -744,8 +744,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>出发</title>
-        <link>https://www.suiyan.cc/blog/departure</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/departure</guid>
+        <link>https://vii.ink/blog/departure</link>
+        <guid isPermaLink="true">https://vii.ink/blog/departure</guid>
         <pubDate>Sun, 03 Aug 2025 00:38:05 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -770,8 +770,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>从Hexo到Astro博客1分钟迁移指南</title>
-        <link>https://www.suiyan.cc/blog/hexo-to-astro</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/hexo-to-astro</guid>
+        <link>https://vii.ink/blog/hexo-to-astro</link>
+        <guid isPermaLink="true">https://vii.ink/blog/hexo-to-astro</guid>
         <pubDate>Mon, 07 Apr 2025 17:20:46 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -800,8 +800,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>夏之初</title>
-        <link>https://www.suiyan.cc/blog/summer</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/summer</guid>
+        <link>https://vii.ink/blog/summer</link>
+        <guid isPermaLink="true">https://vii.ink/blog/summer</guid>
         <pubDate>Sun, 05 May 2019 20:27:07 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -837,8 +837,8 @@ caption id=...]]></content:encoded>
     </item>
     <item>
         <title>启航</title>
-        <link>https://www.suiyan.cc/blog/set-sail</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/set-sail</guid>
+        <link>https://vii.ink/blog/set-sail</link>
+        <guid isPermaLink="true">https://vii.ink/blog/set-sail</guid>
         <pubDate>Thu, 02 May 2019 23:08:22 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -869,8 +869,8 @@ caption id=&quot;attachment_945&quot; align=&quot;alignnone&quot; width=&quot;21
     </item>
     <item>
         <title>女儿</title>
-        <link>https://www.suiyan.cc/blog/daughter</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/daughter</guid>
+        <link>https://vii.ink/blog/daughter</link>
+        <guid isPermaLink="true">https://vii.ink/blog/daughter</guid>
         <pubDate>Mon, 11 Jan 2016 02:44:46 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[
@@ -890,8 +890,8 @@ caption id=&quot;attachment_945&quot; align=&quot;alignnone&quot; width=&quot;21
     </item>
     <item>
         <title>Hello world!</title>
-        <link>https://www.suiyan.cc/blog/Hello world</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/Hello world</guid>
+        <link>https://vii.ink/blog/Hello world</link>
+        <guid isPermaLink="true">https://vii.ink/blog/Hello world</guid>
         <pubDate>Mon, 14 Dec 2015 17:52:32 GMT</pubDate>
         <description><![CDATA[]]></description>
         <content:encoded><![CDATA[

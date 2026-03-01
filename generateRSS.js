@@ -87,8 +87,8 @@ function generateRSS() {
 
         return `    <item>
         <title>${escapeXml(post.title)}</title>
-        <link>https://www.suiyan.cc/blog/${post.id}</link>
-        <guid isPermaLink="true">https://www.suiyan.cc/blog/${post.id}</guid>
+        <link>https://vii.ink/blog/${post.id}</link>
+        <guid isPermaLink="true">https://vii.ink/blog/${post.id}</guid>
         <pubDate>${post.time ? new Date(post.time).toUTCString() : now}</pubDate>
         <description><![CDATA[${description}]]></description>
         <content:encoded><![CDATA[${escapeXml(contentPreview)}]]></content:encoded>
@@ -107,9 +107,9 @@ ${categories}
     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
     <channel>
-        <title>碎言 - SuiYan Blog</title>
-        <link>https://www.suiyan.cc</link>
-        <atom:link href="https://www.suiyan.cc/feed" rel="self" type="application/rss+xml"/>
+        <title>柒色墨笺</title>
+        <link>https://vii.ink</link>
+        <atom:link href="https://vii.ink/feed" rel="self" type="application/rss+xml"/>
         <description>坚持深度阅读，持续写作输出，复盘技术实践。以终生学习对抗不确定性，把固执与坚持，All in 在值得的事情上。</description>
         <language>zh-CN</language>
         <lastBuildDate>${lastBuildDate}</lastBuildDate>
@@ -122,12 +122,12 @@ ${categories}
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <image>
-            <url>https://www.suiyan.cc/assets/images/avatar.jpg</url>
-            <title>碎言 - SuiYan Blog</title>
-            <link>https://www.suiyan.cc</link>
+            <url>https://vii.ink/assets/images/avatar.jpg</url>
+            <title>柒色墨笺</title>
+            <link>https://vii.ink</link>
             <width>144</width>
             <height>144</height>
-            <description>碎言博客头像</description>
+            <description>柒色墨笺博客头像</description>
         </image>
 ${rssItems}
     </channel>
