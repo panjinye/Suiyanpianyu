@@ -19,7 +19,7 @@ const linksConfig = {
             "site_name": "荒野菲克",
             "site_url": "https://ficor.net",
             "site_description": "在路上的思绪与脚印",
-            "site_avatar": "https://img.ficor.net/uploads/2026/01/6960704808a61.webp",
+            "site_avatar": "https://ficor.net/favicon.ico",
             "feed": "https://ficor.net/feed",
             "is_active": true
         },
@@ -27,7 +27,7 @@ const linksConfig = {
             "site_name": "静·夜·思",
             "site_url": "https://blog.ficor.net",
             "site_description": "网页中的诗意与宁静",
-            "site_avatar": "https://img.ficor.net/uploads/2025/11/6914480601006.webp",
+            "site_avatar": "https://ficor.net/favicon.ico",
             "feed": "https://blog.ficor.net/feed",
             "is_active": true
         },
