@@ -66,7 +66,7 @@ const linksConfig = {
         {
             "site_name": "旺东自留地",
             "site_url": "https://wang618.cn",
-            "site_description": "网页中的诗意与宁静",
+            "site_description": "爱生活、爱摸鱼",
             "site_avatar": "https://wang618.cn/logo.gif",
             "feed": "https://wang618.cn/rss.php",
             "is_active": true
@@ -99,7 +99,7 @@ const linksConfig = {
             "site_name": "旅行漫记",
             "site_url": "https://synyan.cn",
             "site_description": "博物馆爱好者",
-            "site_avatar": "https://synyan.cn/wp-content/themes/hera-develop/build/images/logo.png",
+            "site_avatar": "https://synyan.cn/wp-content/themes/hera-develop/build/images/logo-s.png",
             "feed": "https://synyan.cn/feed",
             "is_active": true
         },
@@ -107,7 +107,7 @@ const linksConfig = {
             "site_name": "竹炉山房",
             "site_url": "https://synyan.cn/t",
             "site_description": "旅游点打卡员",
-            "site_avatar": "https://synyan.cn/wp-content/themes/hera-develop/build/images/logo.png",
+            "site_avatar": "https://synyan.cn/wp-content/themes/hera-develop/build/images/logo-s.png",
             "feed": "https://synyan.cn/t/feed",
             "is_active": true
         },
@@ -131,7 +131,7 @@ const linksConfig = {
             "site_name": "老刘博客",
             "site_url": "https://iliu.org",
             "site_description": "热爱传统文化，验光师",
-            "site_avatar": "https://iliu.org/img/avatar_hu_d283e3d89b102ad6.png",
+            "site_avatar": "https://iliu.org/img/favicon.ico",
             "feed": "https://iliu.org/index.xml",
             "is_active": true
         },
@@ -154,7 +154,7 @@ const linksConfig = {
         {
             "site_name": "皇家园林",
             "site_url": "https://hjyl.org",
-            "site_description": "网页中的诗意与宁静",
+            "site_description": "欢迎来到皇家元林",
             "site_avatar": "https://img.hjyl.org/uploads/2019/10/about-me.png",
             "feed": "https://hjyl.org/feed",
             "is_active": true
@@ -241,10 +241,10 @@ const linksConfig = {
         },
         {
             "site_name": "obaby@mars",
-            "site_url": "https://oba.by",
+            "site_url": "https://zhongxiaojie.com",
             "site_description": "黑客程序媛",
             "site_avatar": "https://gg.lang.bi/avatar/d6ebc088df916bcc9e8b94a09f9b0f604e57be54b04bd520c6db2492740fc563?s=90&d=identicon&r=r",
-            "feed": "https://oba.by/feed",
+            "feed": "https://zhongxiaojie.com/feed",
             "is_active": true
         },
         {
