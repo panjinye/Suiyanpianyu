@@ -110,7 +110,7 @@ const TagDetail = ({ tag, originalTag, tagPosts, postsByYear }: { tag: string; o
 
             <div className="w-full">
                 <div className="mb-8">
-                    <CustomLink href="/Tags" className="text-sm text-text-link">
+                    <CustomLink href="/tags" className="text-sm text-text-link">
                         ← 返回标签列表
                     </CustomLink>
                     <h1 className="text-2xl font-semibold mb-2 mt-4 text-text-primary">

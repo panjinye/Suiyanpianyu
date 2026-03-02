@@ -22,10 +22,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ type, title, tag, pageNum }) =>
                 items.push({ label: '文章归档', href: '/Archives' });
                 break;
             case 'tags':
-                items.push({ label: '标签', href: '/Tags' });
+                items.push({ label: '标签', href: '/tags' });
                 break;
             case 'tag':
-                items.push({ label: '标签', href: '/Tags' });
+                items.push({ label: '标签', href: '/tags' });
                 if (tag) {
                     items.push({ label: tag, href: `/tags/${tag}` });
                 }
@@ -34,7 +34,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ type, title, tag, pageNum }) =>
                 items.push({ label: '搜索', href: '/search' });
                 break;
             case 'friends':
-                items.push({ label: '友情链接', href: '/Friends' });
+                items.push({ label: '友情链接', href: '/friends' });
                 break;
             case 'thoughts':
                 items.push({ label: '片语', href: '/thoughts' });

@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import config from "../config";
-import linksConfig from "../links";
+import linksConfig from "../data/links";
 import Head from "next/head";
 import Breadcrumb from "../components/Breadcrumb";
 import giscusConfig from "@/giscusConfigs";
@@ -17,10 +17,10 @@ interface LinkSectionProps {
     title: string;
     description: string;
     links: Array<{
-        site_name: string;
-        site_url: string;
-        site_description: string;
-        site_avatar?: string;
+        name: string;
+        url: string;
+        description: string;
+        avatar?: string;
         is_active?: boolean;
     }>;
 }
@@ -37,11 +37,11 @@ const LinkSection = ({ title, description, links }: LinkSectionProps) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 {links.map((link) => (
                     <LinkCard
-                        key={link.site_name}
-                        site_name={link.site_name}
-                        site_url={link.site_url}
-                        site_description={link.site_description}
-                        site_avatar={link.site_avatar}
+                        key={link.name}
+                        name={link.name}
+                        url={link.url}
+                        description={link.description}
+                        avatar={link.avatar}
                         is_active={link.is_active}
                     />
                 ))}

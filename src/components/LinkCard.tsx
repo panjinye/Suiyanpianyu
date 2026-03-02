@@ -1,26 +1,26 @@
 import Link from './Link';
 
 interface LinkCardProps {
-    site_name: string;
-    site_url: string;
-    site_description: string;
-    site_avatar?: string;
+    name: string;
+    url: string;
+    description: string;
+    avatar?: string;
     is_active?: boolean;
 }
 
-const LinkCard = ({ site_name, site_url, site_description, site_avatar, is_active = true }: LinkCardProps) => {
+const LinkCard = ({ name, url, description, avatar, is_active = true }: LinkCardProps) => {
     return (
         <div className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
             <Link
-                href={site_url}
+                href={url}
                 target='_blank'
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 mb-2"
             >
                 <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
                     <img 
-                        src={site_avatar || 'https://cravatar.cn/avatar/00000000000000000000000000000000?d=mp&f=y'} 
-                        alt={`${site_name} logo`} 
+                        src={avatar || 'https://cravatar.cn/avatar/00000000000000000000000000000000?d=mp&f=y'} 
+                        alt={`${name} logo`} 
                         className="w-full h-full object-cover"
                         onError={(e) => {
                             (e.target as HTMLImageElement).src = 'https://cravatar.cn/avatar/00000000000000000000000000000000?d=mp&f=y';
@@ -33,7 +33,7 @@ const LinkCard = ({ site_name, site_url, site_description, site_avatar, is_activ
                             ? 'text-neutral-500'
                             : 'text-neutral-700'
                     }`}>
-                        {site_name}
+                        {name}
                     </span>
                     {is_active === false && (
                         <span className="text-xs text-neutral-500">链接失效</span>
@@ -50,7 +50,7 @@ const LinkCard = ({ site_name, site_url, site_description, site_avatar, is_activ
             <p className={`text-sm line-clamp-2 leading-relaxed ${
                 is_active === false ? 'text-neutral-500 line-through' : 'text-neutral-600'
             }`}>
-                {site_description}
+                {description}
             </p>
         </div>
     );

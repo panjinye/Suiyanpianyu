@@ -1,4 +1,5 @@
 import { Config } from './types';
+import linksConfig from './data/links';
 
 /**
  * 项目配置文件
@@ -24,8 +25,8 @@ const config: Config = {
     "PROFILE_IMAGE": "assets/images/avatar.png",
 
     'menuItems' : [
-        {name:'标签',href:'/Tags',iconComponent:'TagsIcon'},
-        {name:'链接',href:'/Friends',iconComponent:'FriendsIcon'},
+        {name:'标签',href:'/tags',iconComponent:'TagsIcon'},
+        {name:'链接',href:'/friends',iconComponent:'FriendsIcon'},
         {name:'动态',href:'/activity',iconComponent:'ActivityIcon'},
         {name:'关于',href:'/about',iconComponent:'AboutIcon'},
         {name:'搜索',href:'/search',iconComponent:'SearchIcon'},
@@ -44,28 +45,7 @@ const config: Config = {
     // 博客聚合描述
     "BLOG_AGGREGATION_DESCRIPTION": "一些优秀的博客聚合平台，可以发现更多有趣的独立博客。",
 
-    "snsLinks": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/panjinye/",
-            "iconComponent": "GithubIcon"
-        },
-        {
-            "name": "Email",
-            "url": "mailto:ficor@ficor.cc",
-            "iconComponent": "EmailIcon"
-        },
-        {
-            "name": "Mastodon",
-            "url": "https://mastodon.social/@ficor",
-            "iconComponent": "MastodonIcon"
-        },
-        {
-            "name": "RSS",
-            "url": "/feed.xml",
-            "iconComponent": "RssIcon"
-        }
-    ]
+    "snsLinks": linksConfig.snsLinks
 };
 
 export default config;

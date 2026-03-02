@@ -3,6 +3,7 @@ import Layout from '../../components/Layout';
 import Head from 'next/head';
 import Breadcrumb from '../../components/Breadcrumb';
 import config from '../../config';
+import { ArrowUpIcon } from '../../components/icons/ArrowUpIcon';
 
 interface RSSItem {
   site_name: string;
@@ -17,8 +18,10 @@ interface RSSItem {
 const Activity = () => {
   const [rssItems, setRssItems] = useState<RSSItem[]>([]);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
 
-  useEffect(() => {
+  const loadRSSData = () => {
+    setLoading(true);
     fetch('/rss-data.json')
       .then(res => res.json())
       .then(data => {
@@ -29,6 +32,29 @@ const Activity = () => {
         console.error('Failed to load RSS data:', err);
         setLoading(false);
       });
+  };
+
+  const refreshRSSData = async () => {
+    setRefreshing(true);
+    try {
+      const response = await fetch('/api/refresh-rss');
+      const result = await response.json();
+      if (result.success) {
+        setRssItems(result.data);
+        alert('RSS数据已成功更新！');
+      } else {
+        alert('更新失败：' + result.message);
+      }
+    } catch (error) {
+      console.error('Failed to refresh RSS data:', error);
+      alert('更新失败，请稍后再试');
+    } finally {
+      setRefreshing(false);
+    }
+  };
+
+  useEffect(() => {
+    loadRSSData();
   }, []);
 
   const formatDate = (dateString: string) => {
@@ -68,9 +94,23 @@ const Activity = () => {
       <Breadcrumb type="activity" />
 
       <div>
-        <h1 className="text-2xl font-semibold mb-4 text-text-primary">
-          动态
-        </h1>
+        <div className="flex items-center justify-between mb-4">
+          <h1 className="text-2xl font-semibold text-text-primary">
+            动态
+          </h1>
+          <button
+            onClick={refreshRSSData}
+            disabled={refreshing}
+            className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+          >
+            {refreshing ? (
+              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            ) : (
+              <ArrowUpIcon className="w-4 h-4" />
+            )}
+            <span>{refreshing ? '更新中...' : '刷新数据'}</span>
+          </button>
+        </div>
         <p className="mb-8 text-sm text-text-secondary">
           聚合友链博客的最新文章，发现更多精彩内容
         </p>
