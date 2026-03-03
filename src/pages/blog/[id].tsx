@@ -110,7 +110,7 @@ function Post({ post, relatedPosts, prevPost, nextPost, sameDayPosts }: { post: 
             <Head>
                 <title>{`${post.title} | ${config.BLOG_NAME}`}</title>
                 <meta name="description" content={post.description} />
-                <meta name="keywords" content={post.tag?.replace(/,/g, ',')} />
+                <meta name="keywords" content={post.tag ? (typeof post.tag === 'string' ? post.tag.replace(/,/g, ',') : post.tag.join(',')) : ''} />
                 <meta name="author" content={post.author} />
                 <link rel="canonical" href={`https://www.suiyan.cc/blog/${post.id}`} />
                 <meta property="og:title" content={`${post.title} | ${config.BLOG_NAME}`} />
