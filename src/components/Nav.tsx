@@ -7,7 +7,6 @@ import ArchiveIcon from './icons/ArchiveIcon';
 import TagsIcon from './icons/TagsIcon';
 import FriendsIcon from './icons/FriendsIcon';
 import AboutIcon from './icons/AboutIcon';
-import ActivityIcon from './icons/ActivityIcon';
 
 const iconComponents: Record<string, React.FC<{ className?: string }>> = {
     SearchIcon,
@@ -15,7 +14,6 @@ const iconComponents: Record<string, React.FC<{ className?: string }>> = {
     TagsIcon,
     FriendsIcon,
     AboutIcon,
-    ActivityIcon,
 };
 
 export default function Nav() {
